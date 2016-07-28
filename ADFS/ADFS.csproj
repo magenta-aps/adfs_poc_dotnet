@@ -66,12 +66,6 @@
     <None Include="SAML Schemas\saml-schema-protocol-2.0.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="SAML Schemas\xenc-schema.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="SAML Schemas\xmldsig-core-schema.xsd">
-      <SubType>Designer</SubType>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Token-ADFS.xml">
