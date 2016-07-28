@@ -60,6 +60,7 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <None Include="SAML Schemas\ADFS.wsdl" />
     <None Include="SAML Schemas\saml-schema-assertion-2.0.xsd">
       <SubType>Designer</SubType>
     </None>
