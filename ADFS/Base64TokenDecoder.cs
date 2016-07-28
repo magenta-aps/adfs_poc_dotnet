@@ -12,7 +12,7 @@ namespace ADFS
     {
         public static void DecodeToken()
         {
-            var txt = File.ReadAllText(@"..\..\Token.txt");
+            var txt = File.ReadAllText(@"..\..\XML\Token.txt");
             txt = txt.Substring(txt.IndexOf(" ") + 1);
             var bytes = Convert.FromBase64String(txt);
             var str = new System.IO.Compression.GZipStream(new MemoryStream(bytes), System.IO.Compression.CompressionMode.Decompress);
@@ -23,7 +23,7 @@ namespace ADFS
             doc.NameTable.Add("urn:oasis:names:tc:SAML:2.0:assertion");
 
             doc.Load(str);
-            var targetFile = @"..\..\Token.xml";
+            var targetFile = @"..\..\XML\Token.xml";
 
             var e = doc.DocumentElement;
             e.SetAttribute("xmlns", "urn:oasis:names:tc:SAML:2.0:assertion");

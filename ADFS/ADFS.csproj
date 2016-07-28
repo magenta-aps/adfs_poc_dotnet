@@ -73,14 +73,14 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Request-ADFS-RAW.txt" />
-    <Content Include="Request-ADFS.xml" />
-    <Content Include="Token-ADFS.xml">
+    <Content Include="XML\Request-ADFS-RAW.txt" />
+    <Content Include="XML\Request-ADFS.xml" />
+    <Content Include="XML\Token-ADFS.xml">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="Token-ADFS2.xml" />
-    <Content Include="Token.txt" />
-    <Content Include="Token.xml" />
+    <Content Include="XML\Token-ADFS2.xml" />
+    <Content Include="XML\Token.txt" />
+    <Content Include="XML\Token.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
