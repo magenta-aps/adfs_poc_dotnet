@@ -1,0 +1,30 @@
+﻿POST https://adroot2008.win2008.magenta.dk/adfs/services/trust/13/windowsmixed HTTP/1.1
+Content-Type: application/soap+xml; charset=utf-8
+Host: adroot2008.win2008.magenta.dk
+Transfer-Encoding: chunked
+Expect: 100-continue
+Accept-Encoding: gzip, deflate
+Connection: Keep-Alive
+
+D2A
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
+  <s:Header>
+    <a:Action s:mustUnderstand="1">http://docs.oasis-open.org/ws-sx/ws-trust/200512/RST/Issue</a:Action>
+    <a:MessageID>urn:uuid:216df651-bd2a-44c7-81cf-05cf221f06f8</a:MessageID>
+    <a:ReplyTo>
+      <a:Address>http://www.w3.org/2005/08/addressing/anonymous</a:Address>
+    </a:ReplyTo>
+    <a:To s:mustUnderstand="1">https://adroot2008.win2008.magenta.dk/adfs/services/trust/13/windowsmixed</a:To>
+  </s:Header>
+  <s:Body>
+    <trust:RequestSecurityToken Context="uuid-94e24867-5e01-40c4-9e67-b40b1a518a1e-1" xmlns:trust="http://docs.oasis-open.org/ws-sx/ws-trust/200512">
+      <trust:TokenType>http://docs.oasis-open.org/ws-sx/ws-secureconversation/200512/sct</trust:TokenType>
+      <trust:RequestType>http://docs.oasis-open.org/ws-sx/ws-trust/200512/Issue</trust:RequestType>
+      <trust:KeySize>256</trust:KeySize>
+      <trust:BinaryExchange ValueType="http://schemas.xmlsoap.org/ws/2005/02/trust/spnego" 
+                            EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">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</trust:BinaryExchange>
+    </trust:RequestSecurityToken>
+  </s:Body>
+</s:Envelope>
+0
+
