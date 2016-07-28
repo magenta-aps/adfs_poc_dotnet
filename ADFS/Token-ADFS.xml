@@ -1,0 +1,38 @@
+﻿<Assertion ID="_6fb141dd-dc08-4c72-aba7-60b3a1dd6b67" IssueInstant="2016-07-27T12:37:41.319Z" Version="2.0" xmlns="urn:oasis:names:tc:SAML:2.0:assertion">
+  <Issuer>http://adroot2008.win2008.magenta.dk/adfs/services/trust</Issuer>
+  <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+    <ds:SignedInfo>
+      <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+      <ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" />
+      <ds:Reference URI="#_6fb141dd-dc08-4c72-aba7-60b3a1dd6b67">
+        <ds:Transforms>
+          <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+          <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+        </ds:Transforms>
+        <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" />
+        <ds:DigestValue>zFeCBIgIPINcjgbTo4mgK79tF+i862kzQW7+7YI3yJQ=</ds:DigestValue>
+      </ds:Reference>
+    </ds:SignedInfo>
+    <ds:SignatureValue>rrzoP+Sa+0OsbRNPyqsDVl16w6rbqiABNe3s2yLTH/gbpd85OyRKv7NYur8mdVVJCLKtbZKAZ7STZ7P9S6e7q3xT/rGZOEkpJ0x9IPQbJkzRjWZ2qdC01m3VqoKPhKA/m6r3Y6A/9JEjUhxl5GjOaMTzZYwoVTeSYpLb7dA0Wk7cfcuLkzbALYEJWuOJXAD2Z0L6PfIt/ZS/YR27nT8vz8KssxzIkuxL2Nh8pUICqTcYbyaYPyNmHa7/B7oXbEvoLB7zW5MtezTUYwDS85q2vv6irjU39gruYWlB1sy9wHClm0LvlwzMV0yiu749v3isoDR9Q2x0EDZUDpy/dr4lwA==</ds:SignatureValue>
+    <KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#">
+      <ds:X509Data>
+        <ds:X509Certificate>MIIC9jCCAd6gAwIBAgIQGXVVe2KHZ6pNjVQ7rU6FeTANBgkqhkiG9w0BAQsFADA3MTUwMwYDVQQDEyxBREZTIFNpZ25pbmcgLSBhZHJvb3QyMDA4LndpbjIwMDgubWFnZW50YS5kazAeFw0xNjA3MjcxMjEwNDhaFw0xNzA3MjcxMjEwNDhaMDcxNTAzBgNVBAMTLEFERlMgU2lnbmluZyAtIGFkcm9vdDIwMDgud2luMjAwOC5tYWdlbnRhLmRrMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtUXRXCZtY114SmWFNrAbzpRt4wUIUIHzhWcbvk+1swC7qnjNqgN463sV17aaUeV+ghJ8/6JgbczsVv+Xd8/wC0WpJca2THZYj5WbVv/J7GSu+IlFZxL8s/96I1OF6ovcngEdtGnEORJVwC0rAG3pMw20HQzVlESNa3zw1ChFE+YZ4eHjEUSfGJNTgFhNY81zrHie5VfS9tRttvGuO/bKR8v1pD03opB07Iu1SnxNPOrRjO/q79DtXFs4ZesRqsLd3ut6ivwxMB+a4ZN+shSjiqPdseOK/4d6ECqTLSHV7MuJIK1XqaWEDa1ZaRkIh6eGlAU2wweuOXl/jJ0lbn2d8wIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQCfg3zs0J+XrW3GN0ywh/5fK1N52pzcLmarsRkg3W4mjALX4FfzEF+HNezF3Ry1HwvbH3m9bH9vYW/TuXrG982pKVANxvti2dXWWBxKsHWdQSOvXL9RD4FK9/O9+FcYKlB9NA96OQjayngYwkXWLh8HR9kIoxmzJwwLFYgu0LnoarIK4yj8SW2hZWcPAGwkVjOJqHVJqevdN1e6VsSJE0TOYEdv6+7l30EUSpEmvjhWQGt1OPV6msyKhWdacV3CRsMAhiB037ogC73QYO9JXpwQADTSVl6rgrfCBvVSuXPMhGe+iL5WmlOYvg0gRNarzlnbJRqMcpQl1Vblv7FDq0fz</ds:X509Certificate>
+      </ds:X509Data>
+    </KeyInfo>
+  </ds:Signature>
+  <Subject>
+    <SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer">
+      <SubjectConfirmationData NotOnOrAfter="2016-07-27T12:42:41.319Z" />
+    </SubjectConfirmation>
+  </Subject>
+  <Conditions NotBefore="2016-07-27T12:37:41.317Z" NotOnOrAfter="2016-07-27T13:37:41.317Z">
+    <AudienceRestriction>
+      <Audience>https://fs.magenta.dk</Audience>
+    </AudienceRestriction>
+  </Conditions>
+  <AuthnStatement AuthnInstant="2016-07-27T12:37:41.113Z">
+    <AuthnContext>
+      <AuthnContextClassRef>urn:federation:authentication:windows</AuthnContextClassRef>
+    </AuthnContext>
+  </AuthnStatement>
+</Assertion>

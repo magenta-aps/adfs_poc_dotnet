@@ -1,0 +1,82 @@
+﻿<Assertion xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:xs="http://www.w3.org/2001/XMLSchema" ID="urn:uuid:ABA4E3F541A4C798821469522291896" IssueInstant="2016-07-26T08:38:11.892Z" Version="2.0" xmlns="urn:oasis:names:tc:SAML:2.0:assertion">
+  <Issuer>localhost</Issuer>
+  <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+    <ds:SignedInfo>
+      <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+      <ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+      <ds:Reference URI="#urn:uuid:ABA4E3F541A4C798821469522291896">
+        <ds:Transforms>
+          <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+          <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#">
+            <ec:InclusiveNamespaces xmlns:ec="http://www.w3.org/2001/10/xml-exc-c14n#" PrefixList="xs" />
+          </ds:Transform>
+        </ds:Transforms>
+        <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <ds:DigestValue>CsY/ZafTNGUdD1E2Fruxdekyknk=</ds:DigestValue>
+      </ds:Reference>
+    </ds:SignedInfo>
+    <ds:SignatureValue>
+      yV0UXT9/GaR4F+XlSsbQBJf9ld61H/O7SjfrBfGPJKTzkJsEicgiLPofvNSdm/Rwm6ocShnvvIGc
+      rHsZHfMoTVS+N5kd7/KCWbqW3FjJAoU/u40JTvBJ2ta//V4M+ZxmQQN9QE9Y3pbqyeRYwzpy2zH6
+      rGE0cfFev6yp3Put6GSYr/blMKOfLgA/ijqHOatk/7BuYRA5LOXg6F1Ka3umTQk6/bPhWXPQzFBF
+      /bqUtQeWRb0ICEsdKZuMhKOUXWZcl92KsSBMclA2zhJl6o8gLIu97QaG10lFfv8aaDahSJpEowKK
+      4Q3PTLCgHwjLhjfvbA++vHvP+4GlYVUnKhLHyQ==
+    </ds:SignatureValue>
+    <ds:KeyInfo>
+      <ds:X509Data>
+        <ds:X509Certificate>
+          MIIE4TCCA8mgAwIBAgIDBhRRMA0GCSqGSIb3DQEBBQUAMDwxCzAJBgNVBAYTAlVTMRcwFQYDVQQK
+          Ew5HZW9UcnVzdCwgSW5jLjEUMBIGA1UEAxMLUmFwaWRTU0wgQ0EwHhcNMTIwNDE1MDg0NTUzWhcN
+          MTcwNDE2MTU0MTUwWjCB5zEpMCcGA1UEBRMgcGppa0QvMUxlL2F2aVdaTEFJMkVhaUYvRTlWOU5C
+          bHoxCzAJBgNVBAYTAkRLMRkwFwYDVQQKDBAqLm1hZ2VudGEtYXBzLmRrMRMwEQYDVQQLEwpHVDU3
+          OTYyMDQ3MTEwLwYDVQQLEyhTZWUgd3d3LnJhcGlkc3NsLmNvbS9yZXNvdXJjZXMvY3BzIChjKTEy
+          MS8wLQYDVQQLEyZEb21haW4gQ29udHJvbCBWYWxpZGF0ZWQgLSBSYXBpZFNTTChSKTEZMBcGA1UE
+          AwwQKi5tYWdlbnRhLWFwcy5kazCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAO0GxXHE
+          PbpQJ8cgPZC/4t+J8dSKgroZ5nrlgkGL4huXcEpm4Ww3mLn01NFNIzTX4A+JSj6kQhZOOwPQ5hBq
+          M0dRMBMvRvSeGZSqGlaSmBMP+LSMHtigVw43IPZ3TbkUQ4oU7bGfp5fzKcfLyBVM3hNetrVbb7+L
+          LUy4K4Q2/ELqDCIlBUAyZHyh4ljMa+XLEdy3BecdY+z5QfSTMz+6zz0Fs749VQERYpnATXGMLJnl
+          z1MFibcXj8gn1/aq3vgsATozqjsC1aLfQnOFAkt6ii+jXiKLX91gS+JBwZ8oHeqaaV7zRy4wXTUU
+          pf3fK4fXV10FWnNVc24uXYr8NXz8tXsCAwEAAaOCAT4wggE6MB8GA1UdIwQYMBaAFGtpPWoYQkrd
+          jwJlOf01JIZ4kRYwMA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUH
+          AwIwKwYDVR0RBCQwIoIQKi5tYWdlbnRhLWFwcy5ka4IObWFnZW50YS1hcHMuZGswQwYDVR0fBDww
+          OjA4oDagNIYyaHR0cDovL3JhcGlkc3NsLWNybC5nZW90cnVzdC5jb20vY3Jscy9yYXBpZHNzbC5j
+          cmwwHQYDVR0OBBYEFCeraNgS7veZpfXlTqYn6X01A7xAMAwGA1UdEwEB/wQCMAAwSQYIKwYBBQUH
+          AQEEPTA7MDkGCCsGAQUFBzAChi1odHRwOi8vcmFwaWRzc2wtYWlhLmdlb3RydXN0LmNvbS9yYXBp
+          ZHNzbC5jcnQwDQYJKoZIhvcNAQEFBQADggEBABk3TMQr4wINk0QGAIFYCuTMi9yC5BzyhEeH9k35
+          pBzfbPHg/l+dPQzXbwYIUbHEWoBurkPiHFoRHvx/GXruuAG41AOVIzv76HUmmRxQQCsbdLAYxR+q
+          6msraOlegEhZcTpXyn9cr1J+NHczv5/GO7MP3DoB8RDyLQBQjhAYCrBcJEycj+wn4bTxqUyzFQ8t
+          swJyeDSP6rlJRuWBeZXb6cojV5htmGY3LD8fP3mdOs4fog1JfFRnbiduaqtHfpBrQwzqYM14D5ax
+          ntF8gQl/h7OhUB4/63N50/l6aAQRDe2HBD+kooirf7sah1KKNfYA8aiCd/qgV7A4d8+Ufv/dZ4c=
+        </ds:X509Certificate>
+      </ds:X509Data>
+    </ds:KeyInfo>
+  </ds:Signature>
+  <Subject>
+    <NameID Format="urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress">admin</NameID>
+    <SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer" />
+  </Subject>
+  <Conditions NotBefore="2016-07-26T08:38:11.892Z" NotOnOrAfter="2016-07-26T08:58:11.892Z">
+    <AudienceRestriction>
+      <Audience>https://moxtest.magenta-aps.dk</Audience>
+    </AudienceRestriction>
+  </Conditions>
+  <AuthnStatement AuthnInstant="2016-07-26T08:38:11.892Z">
+    <AuthnContext>
+      <AuthnContextClassRef>urn:oasis:names:tc:SAML:2.0:ac:classes:Password</AuthnContextClassRef>
+    </AuthnContext>
+  </AuthnStatement>
+  <AttributeStatement>
+    <Attribute Name="http://wso2.org/claims/role" NameFormat="http://wso2.org/claims/role">
+      <AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">admin,Internal/mox,Internal/mox ssl,Internal/everyone</AttributeValue>
+    </Attribute>
+    <Attribute Name="http://wso2.org/claims/emailaddress" NameFormat="http://wso2.org/claims/emailaddress">
+      <AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">admin@wso2.com</AttributeValue>
+    </Attribute>
+    <Attribute Name="http://wso2.org/claims/url" NameFormat="http://wso2.org/claims/url">
+      <AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">86c63468-3d40-4364-89ad-b6fb3e39a5bb</AttributeValue>
+    </Attribute>
+    <Attribute Name="http://wso2.org/claims/givenname" NameFormat="http://wso2.org/claims/givenname">
+      <AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">admin</AttributeValue>
+    </Attribute>
+  </AttributeStatement>
+</Assertion>
