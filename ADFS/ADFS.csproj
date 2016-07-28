@@ -73,6 +73,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ADFS Manual.txt" />
     <Content Include="XML\Request-ADFS-RAW.txt" />
     <Content Include="XML\Request-ADFS.xml" />
     <Content Include="XML\Token-ADFS.xml">

@@ -1,0 +1,46 @@
+﻿----------------
+- Installation -
+----------------
+
+* Install a domain controller (or join a domain)
+* Make sure the DNS (or hosts file) is correctly mapping host names to IP addresses
+* If needed, configure BackConnectionHostNames or DisableLoopbackCheck  : https://support.microsoft.com/en-us/kb/896861
+* Install ADFS
+** Windows Server 2008 : 
+   - Download ADFS 2.0 from https://www.microsoft.com/en-us/download/details.aspx?id=10909
+   - Follow the installation wizard
+** Windows Server 2012+ :
+   - Install Active Directory Federation Services role from server manager, select the Federation Service feature (not Federation Service proxy)
+   - Follow the wizard
+
+
+-----------------
+- Configuration -
+-----------------
+
+Adding identifiers (relying party Ids) 
+--------------------------------------
+When calling the trust service, identifiers are used to match the request with the rules that will be applied to the response
+
+ADFS 2.0 -> Trust Relationships -> Relying Party Trusts -> (select or create one) -> Properties
+-> Identifiers -> (add the included identifiers for this trust)
+-> OK
+
+Adding attributes from AD to response
+-------------------------------------
+Attributes can be retrieved from Active Directory and added under AttributeStatement element in the response
+
+
+ADFS 2.0 -> Trust Relationships -> Relying Party Trusts -> (select or create one) -> Edit Claim Rules
+-> Issuance Transform Rules -> (select or create one) -> Edit (or Add) Rule 
+-> (select Attribute store) -> (select/type LDAP Attribute) -> (select/type Outgoing Claim Type)
+-> OK -> OK
+
+Allowing or denying users 
+-------------------------
+This is usually part of the wizard, where you allow all users
+
+ADFS 2.0 -> Trust Relationships -> Relying Party Trusts -> (select or create one) -> Edit Claim Rules
+-> Issuance Authorization Rules -> Add -> 
+-> Claim rule template -> Permit all users ->
+-> Next -> Finish
