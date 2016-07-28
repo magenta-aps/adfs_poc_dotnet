@@ -78,7 +78,6 @@
     <Content Include="XML\Token-ADFS.xml">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="XML\Token-ADFS2.xml" />
     <Content Include="XML\Token.txt" />
     <Content Include="XML\Token.xml" />
   </ItemGroup>

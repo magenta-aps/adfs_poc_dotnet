@@ -57,7 +57,7 @@ namespace ADFS
             {
                 XmlDocument doc = new XmlDocument();
                 doc.LoadXml(genericToken.TokenXml.OuterXml);
-                doc.Save(@"..\..\XML\Token-ADFS2.xml");
+                doc.Save(@"..\..\XML\Token-ADFS.tmp.xml");
 
                 // Extra handling - not used ATM
                 //TokenHandler.Handle(genericToken, relyingPartyId, certSubject);
